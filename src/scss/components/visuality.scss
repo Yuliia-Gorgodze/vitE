@@ -1,0 +1,38 @@
+.visuality__container {
+  display: flex;
+}
+.visuality__tittle {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.visuality_img__box {
+  width: 250px;
+  height: 250px;
+  background: rgb(61, 57, 57);
+  margin-left: 40px;
+}
+.visuality__text {
+  font-size: 400;
+  font-size: 20px;
+  width: 100%;
+}
+.visuality__button {
+  margin-top: 20px;
+  display: flex;
+}
+.visuality__button > li {
+  display: flex;
+  font-size: 400;
+  font-size: 10px;
+  height: 40px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(51, 63, 119);
+  border-radius: 5px;
+  margin-right: 10px;
+  text-align: center;
+  & > a {
+    color: #ffffff;
+  }
+}

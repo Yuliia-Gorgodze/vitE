@@ -1,0 +1,54 @@
+.who_i_am {
+  text-align: center;
+}
+
+.my_photo {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 350px;
+  min-height: 350px;
+  background-color: grey;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.who_i_am_title {
+  margin-bottom: 20px;
+}
+.who_i_am__text {
+  display: block;
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+.i_can {
+  text-align: start;
+  margin-bottom: 10px;
+}
+.i_can > li::before {
+  content: '';
+  display: inline-flex;
+  border-radius: 50%;
+  background-color: rgb(39, 39, 39);
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.who_i_am__button {
+  display: flex;
+  justify-content: center;
+  & > li {
+    display: flex;
+    font-size: 400;
+    font-size: 10px;
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51, 63, 119);
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    & > a {
+      color: #ffffff;
+    }
+  }
+}

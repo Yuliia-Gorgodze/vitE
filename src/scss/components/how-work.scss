@@ -21,7 +21,11 @@
   display: inline-flex;
   text-transform: uppercase;
   align-items: center;
+  & > a {
+    margin-left: 20px;
+  }
 }
+
 .how_work_click {
   display: flex;
   font-size: 400;

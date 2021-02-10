@@ -8,34 +8,54 @@
   justify-content: center;
 }
 .hero__button {
-  display: flex;
-  margin-top: 150px;
-  & > li {
-    display: flex;
-    font-size: 400;
-    height: 60px;
-    width: 270px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(51, 63, 119);
-    border-radius: 5px;
-    margin-right: 30px;
-    text-align: center;
-  }
+
   & > li > a {
     color: #ffffff;
   }
-  & > li:last-child {
-    margin-right: 0;
+  @media screen and (max-width: 767px){
+    margin-top: 150px;
+&>li{
+  font-size: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(51, 63, 119);
+  border-radius: 5px;
+  height: 53px;
+  width: 200px;
+  
+}
+&>li:last-child{
+  margin-top: 15px;
+}
+}  
+  @media screen and (min-width: 768px){
+    margin-top: 150px;
+    & > li {
+      display: flex;
+      height: 60px;
+      width: 270px;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+      text-align: center;
+    }
+    & > li:last-child {
+      margin-right: 0;
+     
+    }
   }
+
 }
 .hero_button > li {
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 10px;
   line-height: 20px;
   height: 40px;
-  width: 180px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,14 +64,39 @@
   position: absolute;
   border-bottom: none;
   bottom: 0;
-  display: flex;
   background-color: rgba(51, 63, 119, 0.5);
   &:first-child {
     transform: translateX(-50%);
-    left: 30%;
+    left: 25%;
   }
   &:last-child {
     transform: translateX(50%);
-    right: 30%;
+    right: 25%;
+  }
+  @media screen and (min-width: 768px){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    height: 40px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    border-bottom: none;
+    bottom: 0;
+   
+    background-color: rgba(51, 63, 119, 0.5);
+    &:first-child {
+      transform: translateX(-50%);
+      left: 30%;
+    }
+    &:last-child {
+      transform: translateX(50%);
+      right: 30%;
+    }
   }
 }

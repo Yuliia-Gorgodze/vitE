@@ -13,21 +13,42 @@
   </head>
 
   <body>
-    <header>
+    <header id="js_header">
       <section class="main-container header_container">
         <div class="header_container__contact">
           <div class="logo_header">
-            <img src="#" alt="logo_header" class="logo" />
+            <img src="#" alt="" class="logo" width="15" height="15" />
+          
           </div>
           <h1 class="header_title">Натяжные Потолки</h1>
           <nav class="header_nav__container">
             <ul class="header_contact">
-              <li><a href="#">телефон</a></li>
-              <li><a href="">мейл</a></li>
+              <li>
+                <svg
+                  class="telefon"
+                  width="25"
+                  height="25"
+                  aria-label="telefone_svg"
+                >
+                  <use
+                    class="icon-telefone"
+                    href="../src/images/sprite.svg#telefone"
+                  ></use>
+                </svg>
+                <a href="#">+38(098)111-11-11</a>
+              </li>
+              <li>
+                <svg class="mail" width="25" height="25" aria-label="mail_svg">
+                  <use
+                    class="icon-mail"
+                    href="../src/images/sprite.svg#mail"
+                  ></use></svg>
+                  <a href="">example@ex.com</a>
+              </li>
             </ul>
           </nav>
         </div>
-        <div class="header_navigation__container">
+        <div class="header_navigation__container" data-menu>
           <ul class="header_nav__menu">
             <li><a href="#">о компании</a></li>
             <li><a href="#">галерея работ</a></li>
@@ -39,19 +60,44 @@
             <li><a href="#">контакты</a></li>
           </ul>
         </div>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu"
+            width="30"
+            height="30"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-cross" href="../src/images/sprite.svg#cross"></use>
+            <use class="icon-menu" href="../src/images/sprite.svg#menu"></use>
+          </svg>
+        </button>
       </section>
     </header>
     <main>
       <!--hero-->
-      <section class="hero__container">
-        <div class="main-container hero_box">
+      <section id="js__hero_section" class="hero__container">
+        <div class="main-container hero_box js_hero">
           <ul class="hero__button">
-            <li><a href="#">Получить консультацию</a></li>
-            <li><a href="#">Вызвать замерщика</a></li>
+            <li>
+              <a href="#">Получить консультацию</a>
+            </li>
+            <li>
+              <a href="#">Вызвать замерщика</a>
+            </li>
           </ul>
           <ul class="hero_button">
-            <li class="hero"><a href="#">Заявка на замер</a></li>
-            <li><a href="#">Примеры работ</a></li>
+            <li class="hero">
+              <a href="#">Заявка на замер</a>
+            </li>
+            <li>
+              <a href="#">Примеры работ</a>
+            </li>
           </ul>
         </div>
       </section>
@@ -86,7 +132,7 @@
       <section class="section">
         <div
           class="confidence_inf__box confidence__container main-container section"
-        >
+        ><h2 class="confidence_titl">Почему нам доверяют?</h2>
           <ul class="confidence_list">
             <li>Собственное производство</li>
             <li>Выполняем монтаж конструкций любого уровня сложности</li>

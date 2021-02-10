@@ -1,5 +1,8 @@
 .visuality__container {
   display: flex;
+  @media screen and(max-width: 767px){
+    flex-direction: column-reverse;
+  }
 }
 .visuality__tittle {
   text-align: center;
@@ -8,8 +11,16 @@
 .visuality_img__box {
   width: 250px;
   height: 250px;
+  margin-right: auto;
+  margin-left: auto;
   background: rgb(61, 57, 57);
+  margin-bottom: 20px;
+ @media screen and (min-width: 768px){
   margin-left: 40px;
+  margin-bottom: 0;
+  margin-right: 0;
+ }
+  
 }
 .visuality__text {
   font-size: 400;
@@ -32,6 +43,11 @@
   border-radius: 5px;
   margin-right: 10px;
   text-align: center;
+  @media screen and(max-width: 767px){
+   &:last-child{
+     margin-right: 0;
+   }
+  }
   & > a {
     color: #ffffff;
   }

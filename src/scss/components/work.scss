@@ -1,0 +1,19 @@
+.work_title{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.work_list>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+    &>svg{
+        margin-bottom: 10px;
+    }
+}
+.mobil, .tool_line{
+    fill: #3ebbc4;
+    
+}

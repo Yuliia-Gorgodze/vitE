@@ -2,27 +2,6 @@
   text-align: center;
   margin-bottom: 40px;
 }
-.gallery_list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  & > li {
-    width: 30%;
-  }
-  & > li:not(:nth-child(3n)) {
-    margin-right: 20px;
-  }
-  & > li:not(:nth-child(-3n)) {
-    margin-bottom: 20px;
-  }
-}
-.gallery_img {
-  height: 250px;
-  background-color: grey;
-}
 .gallery_button {
   display: flex;
   justify-content: center;
@@ -43,3 +22,52 @@
     }
   }
 }
+.gallery_img {
+  height: 200px;
+  background-color: grey;
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px){
+    height: 250px; 
+  }
+}
+.gallery_list{
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    @media screen and (max-width: 479px){
+    &>li{
+      margin-bottom: 20px;
+    }
+    }
+
+    @media screen and (min-width: 480px){
+      display: flex;
+        flex-wrap: wrap;
+      
+      & > li {
+        width: 45%;
+      }
+      & > li:not(:nth-child(2n)) {
+        margin-right: 10px;
+      }
+      & > li:not(:nth-child(-3n)) {
+        margin-bottom: 10px;
+      }
+
+    }
+    @media screen and (min-width: 768px){
+      & > li {
+              width: 30%;
+            }
+            & > li:not(:nth-child(3n)) {
+              margin-right: 20px;
+            }
+            & > li:not(:nth-child(-3n)) {
+              margin-bottom: 20px;
+            }
+    }
+  }
+ 
+
+

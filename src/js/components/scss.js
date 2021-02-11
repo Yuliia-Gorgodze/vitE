@@ -10,3 +10,4 @@ import '../../scss/components/who_i_am.scss';
 import '../../scss/components/bonus.scss';
 import '../../scss/components/contact_us.scss';
 import '../../scss/components/footer.scss';
+import '../../scss/components/work.scss';

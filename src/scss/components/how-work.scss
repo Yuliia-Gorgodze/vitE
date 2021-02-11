@@ -1,5 +1,6 @@
 .how_work {
   text-align: center;
+ 
 }
 
 .how_work__title {
@@ -8,6 +9,28 @@
   margin-bottom: 30px;
 }
 .foto_section {
+  position: relative;
+  @media screen and(max-width: 767px){
+   width: 300px;
+   height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+   &>li{
+     width: 300px;
+     height: 300px;
+     
+   }
+   &>li>img{
+     width: 300px;
+     height: 300px;
+     background-color: rgb(209, 209, 209);
+   }
+  }
+ @media screen and(min-width: 768px){
   display: flex;
   justify-content: space-around;
   & > li > img {
@@ -16,6 +39,7 @@
     background-color: rgb(209, 209, 209);
     margin-bottom: 30px;
   }
+ }
 }
 .how_work_text {
   display: inline-flex;
@@ -40,4 +64,30 @@
   margin-right: 10px;
   text-align: center;
   color: rgb(51, 63, 119);
+}
+.leftButton{
+  background-color: inherit;
+  
+  top: 50%;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 20px;
+  @media screen and (min-width: 768px){
+    left: -40px;
+  }
+}
+.rightButton{
+  background-color: inherit;
+  top: 50%;
+  
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  
+    right: 20px;
+  @media screen and (min-width: 768px){
+    right: -40px;
+  }
+
 }

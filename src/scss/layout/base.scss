@@ -56,11 +56,11 @@ button:focus {
   margin: 0 auto;
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     min-width: 768px;
-    padding: 0 75px;
+    padding: 0 50px;
   }
   @media (min-width: 1024px) {
     max-width: 1200px;
-    padding: 0 71px;
+    padding: 0 75px;
   }
 }
 .section {

@@ -8,11 +8,14 @@ footer {
   margin-bottom: 50px;
 }
 .footer_inf_lists {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  & > div:not(:last-child) {
-    margin-right: 50px;
+
+  @media screen and (min-width: 480px){
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    & > div:not(:last-child) {
+      margin-right: 50px;
+    } 
   }
 }
 .footer_logo {
@@ -60,4 +63,10 @@ footer {
 }
 .footer_social_title {
   margin-bottom: 10px;
+}
+.tool_footer{
+  padding: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-right: 10px;
 }

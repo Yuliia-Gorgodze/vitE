@@ -2,10 +2,20 @@
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
+  @media screen and (min-width: 767px) and (max-width: 1199px){
+    padding-bottom: 0;
+  }
   &__contact {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (min-width: 767px) and (max-width: 1199px){ 
+      justify-content: flex-start;
+      
+      &>nav{
+        margin-left: 100px;
+      }
+    }
   }
 }
 
@@ -36,6 +46,7 @@
   &.is-open {
     display: block;
   }
+ 
 }
 .header_contact {
   display: flex;
@@ -90,10 +101,9 @@
   font-size: 17px;
   font-size: 500;
   text-transform: uppercase;
- 
-  @media screen and(max-width: 480px){
-    margin-left: 20px;
-  }
+  display: inline-flex;
+  align-items: center;
+
 }
 .menu-button {
   z-index: 1;
@@ -113,32 +123,32 @@
 @media screen and (max-width: 767px){
   .telefon {
     position: absolute;
-    top: 80px;
+    top: 100px;
     z-index: 1;
     transform: translateY(-50%);
     left: 25px;
   }
-  .mail{
-    position: absolute;
-    top: 120px;
-    z-index: 1;
-    transform: translateY(-50%);
-    left:25px;
-  }
+  // .mail{
+  //   position: absolute;
+  //   top: 120px;
+  //   z-index: 1;
+  //   transform: translateY(-50%);
+  //   left:25px;
+  // }
   .telefon~a{
     position: absolute;
-    top: 80px;
+    top: 100px;
     transform: translateY(-50%);
     z-index: 1;
     left: 50px;
   }
-  .mail~a{
-    position: absolute;
-    top: 120px;
-    transform: translateY(-50%);
-    z-index: 1;
-    left: 50px;
-  }
+  // .mail~a{
+  //   position: absolute;
+  //   top: 120px;
+  //   transform: translateY(-50%);
+  //   z-index: 1;
+  //   left: 50px;
+  // }
 }
 
 .menu-button.is-open .icon-menu {
